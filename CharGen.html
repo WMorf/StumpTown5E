@@ -13,24 +13,45 @@
             <input type="text" id=""> -->
             
             <!-- Input stats for character here -->
-            <section id="charInput">
+            <section id="charInput" oninput="GatherData()">
                 <div id="charDescription">
                     <label for="charName">Name</label>
                     <input type="text" id="charName">
-        
+
+                    <label for="charClass">Name</label>
+                    <input type="text" id="charClass">
+
                     <label for="charLVL">Level</label>
                     <input type="text" id="charLVL">
                 </div>
-    
+
                 <br>
 
-                <div id="charStats">
-                    <label for=""></label>
-                    <input type="text" id="">
+                <div id="charStats"> <!-- CHARACTER SPECIAL STATS -->
+                    <label for="charStrength">S</label>
+                    <input type="text" id="charStrength"><br>
+
+                    <label for="charPerception">P</label>
+                    <input type="text" id="charPerception"><br>
+
+                    <label for="charEndurance">E</label>
+                    <input type="text" id="charEndurance"><br>
+
+                    <label for="charCharisma">C</label>
+                    <input type="text" id="charCharisma"><br>
+
+                    <label for="charIntelligence">I</label>
+                    <input type="text" id="charIntelligence"><br>
+
+                    <label for="charAgillity">A</label>
+                    <input type="text" id="charAgillity"><br>
+
+                    <label for="charLuck">L</label>
+                    <input type="text" id="charLuck"><br>
                 </div>
             </section>
 
-
-            <script src=""></script>
+            <p id="statDump"></p>
+            <script src="./js/stumptown.js"></script>
         </body>
     </html>
